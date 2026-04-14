@@ -1,0 +1,67 @@
+:root {
+    --pi-dark-blue: #001a57;
+    --pi-sky: #00aeef;
+    --gray-bg: #f5f7f9;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--gray-bg);
+    margin: 0;
+}
+
+.navbar {
+    background-color: var(--pi-dark-blue);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+
+.nav-left { display: flex; align-items: center; gap: 20px; }
+.menu-icon { font-size: 20px; cursor: pointer; }
+.logo-section { display: flex; align-items: center; }
+.brand-logo { height: 40px; width: auto; }
+.vertical-divider { width: 1px; height: 25px; background-color: rgba(255,255,255,0.3); margin: 0 15px; }
+.service-title { font-size: 15px; font-weight: 400; letter-spacing: 0.5px; }
+
+.nav-right { display: flex; align-items: center; gap: 20px; }
+.help-icon { font-size: 20px; opacity: 0.8; cursor: pointer; }
+.user-avatar { width: 40px; height: 40px; background-color: #cbd5e0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; color: white; }
+
+.main-content { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+.page-title { font-size: 24px; color: #444; border-left: 4px solid var(--pi-sky); padding-left: 15px; margin-bottom: 40px; }
+
+.program-selector { display: flex; justify-content: center; gap: 60px; margin-bottom: 40px; }
+.prog-item { width: 200px; text-align: center; }
+.prog-item p { font-size: 11px; font-weight: bold; color: var(--pi-dark-blue); margin-top: 10px; }
+
+.icon-circle { width: 60px; height: 60px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+.solid-blue { background: var(--pi-dark-blue); color: white; }
+.border-only { border: 2px solid #ddd; color: #ccc; }
+.disabled { opacity: 0.5; }
+.selection-indicator { width: 40px; height: 3px; background: var(--pi-dark-blue); margin: 8px auto 0; }
+
+.tabs-container { margin-bottom: 25px; }
+.period-pill { background: white; border: 1px solid #ddd; padding: 7px 18px; border-radius: 20px; font-size: 13px; margin-right: 10px; cursor: pointer; }
+.period-pill.active { border-color: #999; font-weight: bold; }
+
+.subject-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
+.card-header { padding: 15px 20px; display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; align-items: center; }
+.subject-name { font-weight: bold; font-size: 14px; color: #555; }
+.code-gray { color: #999; font-weight: normal; }
+
+/* NOTA SIN NEGRILLA, SOLO TAMAÑO */
+.grade-label { 
+    font-size: 20px; 
+    font-weight: 400; /* Peso normal para que no se vea "feo" o muy gordo */
+    color: #444; 
+}
+
+.card-body { padding: 20px; }
+.term-name { margin: 0 0 12px 0; font-size: 13px; color: #333; }
+.stats-row { display: flex; gap: 20px; font-size: 11px; color: #777; flex-wrap: wrap; }
+.provisional-badge { background: #fff9e6; color: #856404; padding: 4px 12px; font-size: 11px; border-radius: 4px; margin-top: 15px; display: inline-block; }
+.card-footer { padding: 12px; text-align: center; background: #fcfcfc; border-top: 1px solid #f0f0f0; font-size: 13px; color: var(--pi-dark-blue); cursor: pointer; }
